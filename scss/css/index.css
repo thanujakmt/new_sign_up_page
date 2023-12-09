@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +34,6 @@
     flex-direction: column;
     padding-left: 50px;
     padding-top: 60px;
-    padding-right: 50px;
   }
   .main .sub_main .content .text h1 {
     font-size: 3em;
@@ -49,11 +47,11 @@
   }
   .main .sub_main .content .text div p {
     color: rgb(35, 38, 71);
+    font-size: 0.9em;
   }
   .main .sub_main .content .text div p::before {
     content: url(/images/icon-list.svg);
     margin-right: 30px;
-    margin-top: 8px;
     width: 1px !important;
     height: 1px !important;
   }

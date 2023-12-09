@@ -20,8 +20,6 @@
     align-items: center;
     .sub_main{
         background-color: white;
-        // height: 70%;
-        // width: 55%;
         height: 600px;
         width: 750px;
         border-radius: 35px;
@@ -35,7 +33,6 @@
                 flex-direction: column;
                 padding-left: 50px;
                 padding-top: 60px;
-                padding-right: 50px;
                 h1{
                     font-size: 3em;
                     font-weight: 900;
@@ -49,12 +46,11 @@
                 div{
                     p{
                     color: rgb(35, 38, 71);
-                    
+                        font-size: 0.9em;
                     }
                     p::before {
                         content: url(/static/images/icon-list.svg);
                         margin-right: 30px;
-                        margin-top: 8px;
                         width: 1px !important;
                         height: 1px !important;
                       }
