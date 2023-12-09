@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+  .thanks_mobile {
+    display: none;
+  }
+  .main {
+    position: relative;
+    height: 100vh;
+    background-color: rgb(54, 56, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .sub_main {
+    background-color: white;
+    height: 70%;
+    width: 55%;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .sub_main .content .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-right: 50px;
+  }
+  .main .sub_main .content .text h1 {
+    font-size: 3.8em;
+    font-weight: 900;
+    font-family: Roboto;
+    color: rgb(35, 38, 71);
+  }
+  .main .sub_main .content .text p {
+    color: rgb(35, 38, 71);
+  }
+  .main .sub_main .content .text div p {
+    color: rgb(35, 38, 71);
+  }
+  .main .sub_main .content .text div p::before {
+    content: url(/static/images/icon-list.svg);
+    margin-right: 10px;
+    margin-top: 10px;
+    width: 1px !important;
+    height: 1px !important;
+  }
+  .main .sub_main .content .text label {
+    color: rgb(35, 38, 71);
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 5px;
+  }
+  .main .sub_main .content .text label span {
+    padding-left: 140px;
+  }
+  .main .sub_main .content .text input {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  .main .sub_main .content .text button {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(35, 39, 66);
+    padding: 13px;
+    text-align: center;
+    border-radius: 7px;
+    border: none;
+  }
+  .main .sub_main .content .text button:hover {
+    background-image: linear-gradient(to right, rgb(255, 84, 120), rgb(255, 104, 63));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .main .sub_main .content .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thanks_main {
+    position: absolute;
+    top: 0;
+    background-color: rgb(54, 56, 77);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .thanks_main .thanks_sub_main {
+    height: 480px;
+    width: 480px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 50px;
+  }
+  .thanks_main .thanks_sub_main img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .thanks_main .thanks_sub_main h1 {
+    color: rgb(37, 40, 68);
+    font-weight: 700;
+    font-size: 3em;
+  }
+  .thanks_main .thanks_sub_main p {
+    color: rgb(54, 56, 77);
+    font-size: 0.9em;
+  }
+  .thanks_main .thanks_sub_main p span {
+    color: rgb(37, 40, 68);
+    font-weight: 500;
+  }
+  .thanks_main .thanks_sub_main button {
+    border: none;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(37, 40, 68);
+  }
+  .thanks_main .thanks_sub_main button:hover {
+    background-image: linear-gradient(to right, rgb(255, 84, 120), rgb(255, 104, 63));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .main {
+    display: none;
+  }
+  .mobile {
+    position: relative;
+    display: block;
+  }
+  .mobile .content .text {
+    padding: 20px;
+  }
+  .mobile .content .text h1 {
+    font-size: 2.5em;
+    font-family: 1000;
+    color: rgb(35, 38, 71);
+  }
+  .mobile .content .text p {
+    color: rgb(35, 38, 71);
+  }
+  .mobile .content .text div p {
+    color: rgb(35, 38, 71);
+    display: flex;
+    font-size: 1.1em;
+  }
+  .mobile .content .text div p::before {
+    content: url(/static/images/icon-list.svg);
+    margin-right: 10px;
+  }
+  .mobile .content .text label {
+    color: rgb(35, 38, 71);
+    font-weight: 500;
+    margin-bottom: 3px;
+  }
+  .mobile .content .text label span {
+    padding-left: 10px;
+  }
+  .mobile .content .text input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-bottom: 25px;
+  }
+  .mobile .content .text button {
+    text-decoration: none;
+    background-color: rgb(35, 38, 71);
+    color: white;
+    padding: 18px;
+    border-radius: 10px;
+  }
+  .thanks_mobile {
+    position: absolute;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    display: none;
+    padding: 20px;
+  }
+  .thanks_mobile .thanks_content img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+  }
+  .thanks_mobile .thanks_content h1 {
+    color: rgb(37, 40, 68);
+    font-weight: 700;
+    font-size: 3em;
+  }
+  .thanks_mobile .thanks_content p {
+    color: rgb(54, 56, 77);
+    font-size: 1.2em;
+    margin-right: 30px;
+  }
+  .thanks_mobile .thanks_content p span {
+    color: rgb(37, 40, 68);
+    font-weight: 500;
+  }
+  .thanks_mobile .thanks_content button {
+    margin-top: 35%;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(37, 40, 68);
+  }
+  .thanks_mobile .thanks_content button:hover {
+    background-image: linear-gradient(to right, rgb(255, 84, 120), rgb(255, 104, 63));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+}

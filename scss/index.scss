@@ -1,0 +1,239 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (min-width: 1440px) {
+    .mobile{
+        display: none;
+    }
+    .thanks_mobile{
+        display: none;
+    }
+.main{
+    position: relative;
+    height: 100vh;
+    background-color: rgb(54, 56, 77);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sub_main{
+        background-color: white;
+        height: 70%;
+        width: 55%;
+        border-radius: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .content{
+            .text{
+                display: flex;
+                flex-direction: column;
+                padding-left: 50px;
+                padding-top: 60px;
+                padding-right: 50px;
+                h1{
+                    font-size: 3.8em;
+                    font-weight: 900;
+                    font-family: Roboto;
+                    color: rgb(35, 38, 71);
+                }
+                p{
+                    color: rgb(35, 38, 71);
+                }
+                div{
+                    p{
+                    color: rgb(35, 38, 71);
+                    
+                    }
+                    p::before {
+                        content: url(/static/images/icon-list.svg);
+                        margin-right: 10px;
+                        margin-top: 10px;
+                        width: 1px !important;
+                        height: 1px !important;
+                      }
+                }
+                label{
+                    color: rgb(35, 38, 71);
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    margin: 5px;
+                    span{
+                        padding-left: 140px;
+                    }
+                }
+                input{
+                    padding: 13px;
+                    border-radius: 5px;
+                    border: 1px solid gray;
+                }
+                button{
+                    margin-top: 20px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: rgb(35, 39, 66);
+                    padding: 13px;
+                    text-align: center;
+                    border-radius: 7px;
+                    border: none;
+                    &:hover{
+                        background-image: linear-gradient(to right,rgb(255, 84, 120),rgb(255, 104, 63));
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                }
+            }
+            .image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+.thanks_main{
+    position: absolute;
+    top: 0;
+    background-color: rgb(54, 56, 77);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .thanks_sub_main{
+        height: 480px;
+        width: 480px;
+        background-color: white;
+        border-radius: 35px;
+        padding: 50px;
+        img{
+            width: 50px;
+            height: 50px;
+            margin-bottom: 30px;
+        }
+        h1{
+            color: rgb(37, 40, 68);
+            font-weight: 700;
+            font-size: 3em;
+        }
+        p{
+            span{
+                color: rgb(37, 40, 68);
+                font-weight: 500;
+            }
+            color: rgb(54, 56, 77);
+            font-size: 0.9em;
+        }
+        button{
+            border: none;
+            width: 350px;
+            height: 40px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(37, 40, 68);
+            &:hover{
+                background-image: linear-gradient(to right,rgb(255, 84, 120),rgb(255, 104, 63));
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+}
+}
+
+@media only screen and (max-width: 1440px) {
+    .main{
+        display: none;
+    }
+    .mobile{
+        position: relative;
+        display: block;
+        .content{
+            .text{
+                padding: 20px;
+                h1{
+                    font-size: 2.5em;
+                    font-family: 1000;
+                    color: rgb(35, 38, 71);
+                }
+                p{
+                    color: rgb(35, 38, 71);
+                }
+                div{
+                    p{
+                        color: rgb(35, 38, 71);
+                        display: flex;
+                        font-size: 1.1em;
+                    }
+                    p::before {
+                        content: url(/static/images/icon-list.svg);
+                        margin-right: 10px;
+                      }
+                }
+                label{
+                    color: rgb(35, 38, 71);
+                    font-weight: 500;
+                    margin-bottom: 3px;
+                    span{
+                        padding-left: 10px;
+                    }
+                }
+                input{
+                    padding: 12px;
+                    border-radius: 10px;
+                    border: 1px solid gray;
+                    margin-bottom: 25px;
+                }
+                button{
+                    text-decoration: none;
+                    background-color: rgb(35, 38, 71);
+                    color: white;
+                    padding: 18px;
+                    border-radius: 10px;
+
+                }
+            }
+        }
+    }
+    .thanks_mobile{
+        position: absolute;
+        top: 0;
+        background-color: white;
+        height: 100vh;
+        display: none;
+        padding: 20px;
+        .thanks_content{
+            img{
+                width: 50px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+            h1{
+                color: rgb(37, 40, 68);
+                font-weight: 700;
+                font-size: 3em;
+            }
+            p{
+                span{
+                    color: rgb(37, 40, 68);
+                    font-weight: 500;
+                }
+                color: rgb(54, 56, 77);
+                font-size: 1.2em;
+                margin-right: 30px;
+            }
+            button{
+                margin-top: 35%;
+                border: none;
+                width: 300px;
+                height: 40px;
+                border-radius: 10px;
+                color: white;
+                background-color: rgb(37, 40, 68);
+                &:hover{
+                    background-image: linear-gradient(to right,rgb(255, 84, 120),rgb(255, 104, 63));
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+        }
+    }
+}
