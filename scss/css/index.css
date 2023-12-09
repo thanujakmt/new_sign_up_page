@@ -1,10 +1,11 @@
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 750px) {
   .mobile {
     display: none;
   }
@@ -21,12 +22,13 @@
   }
   .main .sub_main {
     background-color: white;
-    height: 70%;
-    width: 55%;
+    height: 600px;
+    width: 750px;
     border-radius: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
   }
   .main .sub_main .content .text {
     display: flex;
@@ -36,21 +38,22 @@
     padding-right: 50px;
   }
   .main .sub_main .content .text h1 {
-    font-size: 3.8em;
+    font-size: 3em;
     font-weight: 900;
     font-family: Roboto;
     color: rgb(35, 38, 71);
   }
   .main .sub_main .content .text p {
+    display: flex;
     color: rgb(35, 38, 71);
   }
   .main .sub_main .content .text div p {
     color: rgb(35, 38, 71);
   }
   .main .sub_main .content .text div p::before {
-    content: url(/images/icon-list.svg);
-    margin-right: 10px;
-    margin-top: 10px;
+    content: url(/static/images/icon-list.svg);
+    margin-right: 30px;
+    margin-top: 8px;
     width: 1px !important;
     height: 1px !important;
   }
@@ -134,7 +137,7 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 700px) {
   .main {
     display: none;
   }
@@ -159,7 +162,7 @@
     font-size: 1.1em;
   }
   .mobile .content .text div p::before {
-    content: url(/images/icon-list.svg);
+    content: url(/static/images/icon-list.svg);
     margin-right: 10px;
   }
   .mobile .content .text label {
