@@ -48,7 +48,7 @@
     color: rgb(35, 38, 71);
   }
   .main .sub_main .content .text div p::before {
-    content: url(/static/images/icon-list.svg);
+    content: url(/images/icon-list.svg);
     margin-right: 10px;
     margin-top: 10px;
     width: 1px !important;
@@ -159,7 +159,7 @@
     font-size: 1.1em;
   }
   .mobile .content .text div p::before {
-    content: url(/static/images/icon-list.svg);
+    content: url(/images/icon-list.svg);
     margin-right: 10px;
   }
   .mobile .content .text label {
